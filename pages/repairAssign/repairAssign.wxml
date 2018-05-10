@@ -1,0 +1,50 @@
+<!--pages/repairAssign/repairAssign.wxml-->
+<view class='title'>工单分派</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section_title">服务商：</view>
+    <picker bindchange="bindServiceProviderChange" value="{{service_provider_index}}" range="{{service_provider_list}}" range-key="{{'name'}}">
+      <view class="picker">
+        {{service_provider_list[service_provider_index].name}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <view class="section_title">维修项目：</view>
+    <picker bindchange="bindClassifyChange" value="{{classify_index}}" range="{{classify_list}}" range-key="{{'name'}}">
+      <view class="picker">
+        {{classify_list[classify_index].name}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <view class="section_title">资产类别：</view>
+    <picker bindchange="bindAssetCategoryChange" value="{{asset_category_index}}" range="{{asset_category_list}}" range-key="{{'name'}}">
+      <view class="picker">
+        {{asset_category_list[asset_category_index].name}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <view class="section_title">维修人员：</view>
+    <picker bindchange="bindServiceWorkerChange" value="{{service_worker_index}}" range="{{service_worker_list}}" range-key="{{'name'}}">
+      <view class="picker">
+        {{service_worker_list[service_worker_index].name}}
+      </view>
+    </picker>
+  </view>
+
+  <view class='tabBar'>
+    <view class='tabBar_litem tabBar_left ' catchtap='to_index'>
+      取 消
+    </view>
+    <button class='tabBar_litem tabBar_right submitBtn' formType="submit">
+      提 交
+    </button>
+  </view>
+  
+
+</form>

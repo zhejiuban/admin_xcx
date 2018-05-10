@@ -1,0 +1,28 @@
+<template name="navTop" >
+  <view class='tab-h' >
+    <view class="tab-item {{currentTab==0?'active':''}}" bindtap="swichNav1">待分派</view>
+    <view class="tab-item {{currentTab==1?'active':''}}" bindtap="swichNav2">已分派</view>
+    <view class="tab-item {{currentTab==2?'active':''}}" bindtap="swichNav3">已完成</view>
+    <view class="tab-item {{currentTab==3?'active':''}}" bindtap="swichNav4">所有工单</view>
+  </view>
+</template>
+ <template name="tabBar">
+  <view class='tabBar'>
+    <view class='tabBar_litem tabBar_left' bindtap='toIndex' >
+      <view class='item_icon' >
+        <image src='/images/home.png' ></image>
+      </view>
+    </view>
+    <view class='tabBar_litem tabBar_left1' bindtap='toPanel' >
+      <view class='item_icon' >
+        <image src='/images/wxb.png' ></image>
+      </view>
+    </view>
+    <view class='tabBar_litem tabBar_right' bindtap='toMe'>
+      <view class='item_icon' >
+        <image src='/images/me.png' ></image>
+      </view>
+    </view>
+  </view>
+</template> 
+

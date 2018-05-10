@@ -1,0 +1,104 @@
+/* pages/panel/panel.wxss */
+
+.content{
+  padding-bottom: 100rpx; 
+}
+
+.title{
+  display: block;
+  width: 100%;
+  text-align: center; 
+  padding: 20rpx 0;
+}
+
+.nav{
+  position: relative;
+  color: #666;
+  font-size: 32rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #cfcfcf;
+}
+
+.nav-title{
+  float: left;
+  margin-left: 20rpx;
+}
+
+.nav-text{
+  float: right; 
+  margin-right: 20rpx;
+}
+.nav-all{
+  line-height: 50rpx;
+}
+ .today-num{
+  position: absolute;
+  right: 20rpx;
+  top: 25rpx;
+  color: #4898fa;
+  font-size: 28rpx;
+} 
+
+.list{
+  margin-top: 20rpx;
+}
+
+.label_title{
+  display: block;
+  width: 96%;
+  color: #666;
+  font-size: 32rpx;
+  padding: 10rpx 2%;
+}
+.canvas_list{
+  width: 96%;
+  height: 500rpx;
+  padding: 0 2%;
+  border: 1rpx solid #cfcfcf; 
+}
+canvas{
+  width: 100%;
+}
+
+
+/*底部tabBar  */
+.tabBar{
+  width:100%;
+   position: fixed; 
+  bottom: 0;
+  height:100rpx; 
+  line-height: 100rpx;
+  background-color: #4898fa;
+  color: #fff;
+}
+.tabBar_litem{
+  position: absolute;
+  bottom: 0rpx;
+  width:33%;
+  height: 100rpx;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+.item_icon{
+  width: 100%;
+  height: 100rpx;
+  display: block;
+  text-align: center;
+  overflow: auto;
+  position: relative;
+}
+.item_icon image{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -25rpx;
+  top: 25rpx; 
+}
+
+.tabBar_left1{
+  left:33%;
+  border-right: 1rpx solid #4D9DFF; 
+}

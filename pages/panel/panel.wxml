@@ -1,0 +1,72 @@
+<!--pages/panel/panel.wxml-->
+  <text class='title' >控制面板</text> 
+<view class='content' >
+
+  <view class='nav' >
+    <view class='nav-title' >工单</view>
+    <view class='nav-text' >
+      <view class='nav-all'>总量：{{items.process_num}}</view>
+       <view class='today-num' >今日+{{items.today_process_num}}条</view> 
+    </view>
+  </view>
+
+  <view class='nav' >
+    <view class='nav-title'>场地</view>
+    <view class='nav-text' >
+      总量：{{items.area_num}}
+    </view>
+  </view>
+
+  <view class='nav' >
+    <view class='nav-title'>资产</view>
+    <view class='nav-text' >
+      总量：{{items.asset_num}}
+    </view>
+  </view>
+
+  <view class='nav' >
+    <view class='nav-title'>维修人员</view>
+    <view class='nav-text' >
+      总人数：{{items.service_worker_num}}
+    </view>
+  </view>
+
+  <view class='list' >
+    <label class='label_title' >工单统计</label>
+    <view class="canvas_list">
+      <canvas canvas-id="pieCanvas1" class="canvas" style="height:100%"></canvas>
+    </view>
+  </view>
+
+  <view class='list' >
+    <label class='label_title' >评分统计</label>
+    <view class="canvas_list">
+      <canvas canvas-id="pieCanvas2" class="canvas" style="height:100%"></canvas>
+    </view>
+  </view>
+
+  <view class='list' >
+    <label class='label_title' >工单类型统计</label>
+    <view class="canvas_list">
+      <canvas canvas-id="pieCanvas3" class="canvas" style="height:100%"></canvas>
+    </view>
+  </view>
+</view>
+
+<!-- <view class='tabBar'>
+  <view class='tabBar_litem tabBar_left' bindtap='toIndex' >
+    <view class='item_icon' >
+      <image src='/images/home.png' ></image>
+    </view>
+  </view>
+  <view class='tabBar_litem tabBar_left1' bindtap='toPanel' >
+    <view class='item_icon' >
+      <image src='/images/wxb.png' ></image>
+    </view>
+  </view>
+  <view class='tabBar_litem tabBar_right' bindtap='toMe'>
+    <view class='item_icon' >
+      <image src='/images/me.png' ></image>
+    </view>
+  </view>
+</view>    -->

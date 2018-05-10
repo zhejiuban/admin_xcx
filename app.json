@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/panel/panel",
+    "pages/system/system",
+    "pages/time/time",
+    "pages/index/service/service",
+    "pages/index/all/all",
+    "pages/index/over/over",
+    "pages/index/assess/assess",
+    "pages/alldetails/alldetails",
+    "pages/repairAssign/repairAssign",
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/index/config/config"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "这就办智慧后勤",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff"
+  }
+  
+}
